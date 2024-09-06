@@ -1,0 +1,8 @@
+services:
+  webapp:
+    build: .
+    container_name: "max"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./storage:/app/storage
